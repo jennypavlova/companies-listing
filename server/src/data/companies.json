@@ -1,0 +1,57 @@
+{ "companies": [
+    {
+      "companyName": "Test Name 1",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Excavation",
+      "city": "Berlin"
+    },
+    {
+      "companyName": "Test Name 2",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Plumbing",
+      "city": "Frankfurt"
+    },
+    {
+      "companyName": "Test Name 3",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Plumbing",
+      "city": "Hamburg"
+    },
+    {
+      "companyName": "Test Name 4",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Excavation",
+      "city": "Stuttgard"
+    },
+    {
+      "companyName": "Test Name 5",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Electrical",
+      "city": "Memmingen"
+    },
+    {
+      "companyName": "Test Name 6",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Electrical",
+      "city": "Stuttgard"
+    },
+    {
+      "companyName": "Test Name 7",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Electrical",
+      "city": "Memmingen"
+    },
+    {
+      "companyName": "Test Name 8",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Electrical",
+      "city": "Stuttgard"
+    },
+    {
+      "companyName": "Test Name 9",
+      "logo": "https://placekitten.com/300/300",
+      "specialities": "Electrical",
+      "city": "Memmingen"
+    }
+  ]
+}
