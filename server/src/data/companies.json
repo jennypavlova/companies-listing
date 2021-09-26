@@ -1,56 +1,62 @@
 { "companies": [
     {
-      "companyName": "Test Name 1",
+      "companyName": "Neighborhood Creation Group",
       "logo": "https://placekitten.com/300/300",
       "specialities":["Electrical", "Excavation", "Plumbing"],
       "city": "Berlin"
     },
     {
-      "companyName": "Test Name 2",
+      "companyName": "Green Concrete Builder ",
       "logo": "https://placekitten.com/300/300",
       "specialities":["Plumbing"],
       "city": "Frankfurt"
     },
     {
-      "companyName": "Test Name 3",
+      "companyName": "Premium Contractors",
       "logo": "https://placekitten.com/100/100",
       "specialities":["Plumbing"],
       "city": "Hamburg"
     },
     {
-      "companyName": "Test Name 4",
+      "companyName": "Build It Brothers",
       "logo": "https://placekitten.com/200/300",
       "specialities":["Excavation", "Plumbing"],
       "city": "Stuttgard"
     },
     {
-      "companyName": "Test Name 5",
+      "companyName": "Success Construction",
       "logo": "https://placekitten.com/300/300",
       "specialities":["Electrical"],
       "city": "Memmingen"
     },
     {
-      "companyName": "Test Name 6",
+      "companyName": "Base Mountain Construction",
       "logo": "https://placekitten.com/300/300",
       "specialities":["Electrical", "Excavation", "Plumbing"],
       "city": "Stuttgard"
     },
     {
-      "companyName": "Test Name 7",
+      "companyName": "Boutique Builders",
       "logo": "https://placekitten.com/300/300",
       "specialities":["Electrical"],
       "city": "Memmingen"
     },
     {
-      "companyName": "Test Name 8",
+      "companyName": "Green Power Home Builders ",
       "logo": "https://placekitten.com/300/300",
       "specialities":["Electrical"],
       "city": "Stuttgard"
     },
     {
-      "companyName": "Test Name 9",
+      "companyName": "Wellness Home Builders",
       "logo": "https://placekitten.com/300/300",
-      "specialities":["Electrical"],
+      "specialities":["Electrical", "Excavation"],
+      "city": "Hamburg"
+    },
+    {
+      "companyName": "Home Builders",
+      "logo": "https://placekitten.com/300/300",
+      "specialities":["Excavation"],
       "city": "Memmingen"
     }
   ]
