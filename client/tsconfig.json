@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "esnext",
+    "module": "es2020",
     "allowJs": true,
     "sourceMap": true,
     "declaration": true,
@@ -12,21 +12,14 @@
     "strict": true,
     "outDir": "dist",
     "resolveJsonModule": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": ["dom", "esnext"],
     "skipLibCheck": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true
+    "jsx": "react",
+    "paths": {
+      "*": ["./node_modules/*"]
+    }
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

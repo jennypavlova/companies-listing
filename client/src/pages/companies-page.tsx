@@ -1,10 +1,13 @@
 import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
+import Container from '@mui/material/Container';
 import List from '@mui/material/List';
 import React, { useState, useEffect } from 'react';
 
 import { CompanyCard } from '../components/company-card/company-card';
 import { FiltersGroup } from '../components/filters-group/filters-group';
-import { SearchAppBar } from '../components/search-app-bar';
+import { SearchAppBar } from '../components/search-app-bar/search-app-bar';
 import { useCompanies } from '../hooks/companies-hooks';
 
 export const CompaniesPage: React.FC = () => {
@@ -21,7 +24,9 @@ export const CompaniesPage: React.FC = () => {
         companies.filter(
           (company) =>
             (!searchFilters.byCompanyName ||
-              company.companyName.includes(searchFilters.byCompanyName)) &&
+              company.companyName
+                .toLocaleLowerCase()
+                .includes(searchFilters.byCompanyName.toLocaleLowerCase())) &&
             searchFilters.bySpecialties.every((filteredSpecialty) =>
               company.specialities.includes(filteredSpecialty),
             ),
@@ -31,7 +36,11 @@ export const CompaniesPage: React.FC = () => {
   }, [isFetched, companies, searchFilters]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <Box sx={{ display: 'flex' }}>
+        <CircularProgress />
+      </Box>
+    );
   }
 
   if (error) {
@@ -61,13 +70,15 @@ export const CompaniesPage: React.FC = () => {
   return (
     <div className="CompaniesPage">
       <SearchAppBar onChange={handleSearch} />
-      <FiltersGroup onChange={handleFilter} />
-      {filteredCompanies.length === 0 && <Alert severity="warning">No companied found</Alert>}
-      <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
-        {filteredCompanies?.map((company) => (
-          <CompanyCard key={company?.companyName} company={company} />
-        ))}
-      </List>
+      <Container maxWidth="md">
+        <FiltersGroup onChange={handleFilter} />
+        {filteredCompanies.length === 0 && <Alert severity="warning">No companied found</Alert>}
+        <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+          {filteredCompanies?.map((company) => (
+            <CompanyCard key={company?.companyName} company={company} />
+          ))}
+        </List>
+      </Container>
     </div>
   );
 };

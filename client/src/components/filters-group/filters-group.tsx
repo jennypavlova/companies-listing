@@ -1,4 +1,6 @@
+import Box from '@mui/material/Box';
 import Checkbox from '@mui/material/Checkbox';
+import CircularProgress from '@mui/material/CircularProgress';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import * as React from 'react';
 
@@ -12,7 +14,11 @@ export const FiltersGroup: React.FC<Props> = ({ onChange }) => {
   const { isFetched: loadingSpecialities, error: errorSpecialities, data } = useSpecialities();
 
   if (!loadingSpecialities) {
-    return <div>Loading...</div>;
+    return (
+      <Box sx={{ display: 'flex' }}>
+        <CircularProgress />
+      </Box>
+    );
   }
 
   if (errorSpecialities) {

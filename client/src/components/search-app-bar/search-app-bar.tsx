@@ -6,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import React from 'react';
 
-import { SearchInput } from './search-input/search-input';
+import { SearchInput } from '../search-input/search-input';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
